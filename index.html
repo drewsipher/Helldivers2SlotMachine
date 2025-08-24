@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Helldivers 2 — Loadout Slot Machine</title>
+    <link rel="preload" href="assets/site/css/styles.css" as="style" />
+    <link rel="stylesheet" href="assets/site/css/styles.css" />
+    <meta name="description" content="Spin for a random Helldivers 2 loadout, stratagems, and booster!" />
+  </head>
+  <body>
+    <div id="app">
+      <header class="site-header">
+        <h1>Helldivers Loadout Slot Machine</h1>
+        <p class="tag">For Liberty. For Democracy. For RNG.</p>
+      </header>
+
+      <main>
+        <section class="machine machine--loadout">
+          <div class="machine-title">
+            <h2>Loadout Machine</h2>
+            <p class="subtitle">Primary • Secondary • Grenade</p>
+          </div>
+          <div class="slot-frame">
+            <div class="reels">
+              <div class="reel" data-reel="primary">
+                <div class="reel-window">
+                  <img alt="Primary" />
+                </div>
+                <div class="label">Primary</div>
+                <div class="result-text"></div>
+              </div>
+              <div class="reel" data-reel="secondary">
+                <div class="reel-window">
+                  <img alt="Secondary" />
+                </div>
+                <div class="label">Secondary</div>
+                <div class="result-text"></div>
+              </div>
+              <div class="reel" data-reel="grenade">
+                <div class="reel-window">
+                  <img alt="Grenade" />
+                </div>
+                <div class="label">Grenade</div>
+                <div class="result-text"></div>
+              </div>
+            </div>
+            <button class="lever" id="spin-loadout">Spin Loadout</button>
+          </div>
+        </section>
+
+        <section class="machine machine--strats">
+          <div class="machine-title">
+            <h2>Stratagems + Booster Machine</h2>
+            <p class="subtitle">4 Stratagems • 1 Booster</p>
+          </div>
+          <div class="slot-frame">
+            <div class="reels">
+              <div class="reel" data-reel="strat-1">
+                <div class="reel-window">
+                  <img alt="Stratagem 1" />
+                </div>
+                <div class="label">Stratagem 1</div>
+                <div class="result-text"></div>
+              </div>
+              <div class="reel" data-reel="strat-2">
+                <div class="reel-window">
+                  <img alt="Stratagem 2" />
+                </div>
+                <div class="label">Stratagem 2</div>
+                <div class="result-text"></div>
+              </div>
+              <div class="reel" data-reel="strat-3">
+                <div class="reel-window">
+                  <img alt="Stratagem 3" />
+                </div>
+                <div class="label">Stratagem 3</div>
+                <div class="result-text"></div>
+              </div>
+              <div class="reel" data-reel="strat-4">
+                <div class="reel-window">
+                  <img alt="Stratagem 4" />
+                </div>
+                <div class="label">Stratagem 4</div>
+                <div class="result-text"></div>
+              </div>
+              <div class="reel" data-reel="booster">
+                <div class="reel-window">
+                  <img alt="Booster" />
+                </div>
+                <div class="label">Booster</div>
+                <div class="result-text"></div>
+              </div>
+            </div>
+            <button class="lever" id="spin-strats">Spin Stratagems</button>
+          </div>
+        </section>
+
+        <div class="actions">
+          <button class="lever lever--primary" id="spin-all">Spin All</button>
+        </div>
+      </main>
+
+      <footer class="site-footer">
+        <p>Fan-made randomizer for Helldivers 2. Images belong to their respective owners. For personal use.</p>
+      </footer>
+    </div>
+
+    <script type="module" src="assets/site/js/app.js"></script>
+  </body>
+  </html>
