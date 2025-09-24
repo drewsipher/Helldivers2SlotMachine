@@ -115,6 +115,25 @@ main {
 .actions { text-align: center; }
 .lever--primary { background: linear-gradient(180deg, var(--accent), var(--accent-2)); color: #02131a; }
 
+/* Toggle switch */
+.toggle { display: inline-flex; align-items: center; gap: 8px; user-select: none; cursor: pointer; }
+.toggle .toggle-label { color: var(--muted); font-weight: 600; }
+.toggle input { display: none; }
+.toggle .toggle-track {
+  position: relative; width: 50px; height: 28px; border-radius: 999px;
+  background: #1b2744; border: 1px solid #2a3760; box-shadow: inset 0 0 0 1px rgba(255,255,255,.04);
+}
+.toggle .toggle-thumb {
+  position: absolute; top: 2px; left: 2px; width: 24px; height: 24px; border-radius: 50%;
+  /* OFF (unchecked): muted blue */
+  background: linear-gradient(180deg, #5e7fb0, #4b6a97);
+  box-shadow: 0 4px 10px rgba(0,0,0,.5);
+  transition: left .18s ease, background .2s ease;
+}
+/* ON (checked): yellow */
+.toggle input:checked + .toggle-track { background: #3a2a05; border-color: #6b5510; }
+.toggle input:checked + .toggle-track .toggle-thumb { left: 24px; background: linear-gradient(180deg, var(--gold), var(--gold-2)); }
+
 /* Reel spin animation */
 @keyframes spin {
   0% { transform: translateY(-8%); filter: blur(0px) brightness(1); }

@@ -49,6 +49,8 @@ function safePlay(audio) {
 
 async function main() {
   const rows = await loadCsv(DATA_CSV);
+  // Extra Democratic toggle (on = random, off = strict)
+  const strictEl = document.getElementById('extra-toggle');
   // Partition the data
   const weapons = rows.filter(r => r.Category.toLowerCase() === 'weapon');
   const boosters = rows.filter(r => r.Category.toLowerCase() === 'booster');
@@ -81,15 +83,25 @@ async function main() {
     { key: 'booster', label: 'Booster', sourceKey: 'booster' },
   ], reelData, sounds);
 
-  // Seed initial random values so images are visible on load
-  loadoutMachine.seed();
-  stratMachine.seed();
+  // Seed initial values according to toggle state (unchecked => strict)
+  const initialStrict = !strictEl?.checked;
+  loadoutMachine.seed({ strict: initialStrict });
+  stratMachine.seed({ strict: initialStrict });
 
-  document.getElementById('spin-loadout').addEventListener('click', () => loadoutMachine.spin());
-  document.getElementById('spin-strats').addEventListener('click', () => stratMachine.spin());
+  // Re-seed on toggle change to reflect mode immediately
+  strictEl?.addEventListener('change', () => {
+    const strict = !strictEl.checked;
+    loadoutMachine.seed({ strict });
+    stratMachine.seed({ strict });
+  });
+
+  // Invert logic: unchecked => strict=true
+  document.getElementById('spin-loadout').addEventListener('click', () => loadoutMachine.spin({ strict: !strictEl?.checked }));
+  document.getElementById('spin-strats').addEventListener('click', () => stratMachine.spin({ strict: !strictEl?.checked }));
   document.getElementById('spin-all').addEventListener('click', () => {
-    loadoutMachine.spin({ noSound: true });
-    setTimeout(() => stratMachine.spin(), 200);
+    const strict = !strictEl?.checked;
+    loadoutMachine.spin({ noSound: true, strict });
+    setTimeout(() => stratMachine.spin({ strict }), 200);
     safePlay(sounds.spin);
   });
 }

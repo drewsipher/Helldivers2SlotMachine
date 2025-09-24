@@ -26,6 +26,7 @@ export class SlotMachine {
 
   spin(opts = {}) {
     const noSound = !!opts.noSound;
+    const strict = !!opts.strict;
     if (!noSound) this._play('spin');
 
     const delayStep = 200;
@@ -43,7 +44,10 @@ export class SlotMachine {
       let picks = [];
 
       const anyGroupBy = cfgs.find(c => c.groupByField);
-      if (anyGroupBy) {
+      if (strict && (sourceKey === 'strat')) {
+        // In strict mode for stratagems, ignore groupBy and enforce constraints instead.
+        picks = this._pickStratagemsWithConstraints(source, cfgs.length);
+      } else if (anyGroupBy) {
         const field = anyGroupBy.groupByField;
         const buckets = new Map();
         source.forEach(item => {
@@ -63,13 +67,17 @@ export class SlotMachine {
           picks.push(arr[Math.floor(Math.random() * arr.length)]);
         }
       } else {
-        // simple unique sampling by item
-        const pool = [...source];
-        cfgs.forEach(() => {
-          if (!pool.length) return picks.push(null);
-          const i = Math.floor(Math.random() * pool.length);
-          picks.push(pool.splice(i, 1)[0]);
-        });
+        // Either simple unique sampling, or constraint-aware sampling for stratagems when strict mode.
+        if (strict && (sourceKey === 'strat')) {
+          picks = this._pickStratagemsWithConstraints(source, cfgs.length);
+        } else {
+          const pool = [...source];
+          cfgs.forEach(() => {
+            if (!pool.length) return picks.push(null);
+            const i = Math.floor(Math.random() * pool.length);
+            picks.push(pool.splice(i, 1)[0]);
+          });
+        }
       }
 
       cfgs.forEach((cfg, j) => {
@@ -86,6 +94,58 @@ export class SlotMachine {
         idx++;
       });
     }
+  }
+
+  // Constraint-aware selection for stratagems in strict mode
+  _pickStratagemsWithConstraints(source, count) {
+    // Rules:
+    // 1) Never two support weapons unless one of them is Expendable as the subtype
+    // 2) Never two items that have a backpack set to true
+    // We'll attempt random samples with retries to satisfy constraints.
+    const MAX_TRIES = 200;
+    const pool = [...source];
+    if (count <= 0) return [];
+
+    function satisfies(items) {
+      // Rule 2: at most one with Has Backpack == 'True' (case-insensitive)
+      const backpackCount = items.filter(x => (String(x['Has Backpack'] || '').toLowerCase() === 'true')).length;
+      if (backpackCount > 1) return false;
+
+      // Rule 1 (revised): no more than one NON-EXPENDABLE support weapon.
+      const support = items.filter(x => (x.Type || '').toLowerCase() === 'support weapon');
+      const nonExpendableSupport = support.filter(x => (x.Subtype || '').toLowerCase() !== 'expendable');
+      if (nonExpendableSupport.length > 1) return false;
+
+      return true;
+    }
+
+    for (let attempt = 0; attempt < MAX_TRIES; attempt++) {
+      // unique sample
+      const temp = [...pool];
+      const pick = [];
+      for (let i = 0; i < count; i++) {
+        if (!temp.length) break;
+        const idx = Math.floor(Math.random() * temp.length);
+        pick.push(temp.splice(idx, 1)[0]);
+      }
+      if (pick.length === count && satisfies(pick)) return pick;
+    }
+    // Fallback: greedy build that respects constraints as much as possible
+    const result = [];
+    const remaining = [...pool];
+    while (result.length < count && remaining.length) {
+      const idx = Math.floor(Math.random() * remaining.length);
+      const cand = remaining.splice(idx, 1)[0];
+      const trial = result.concat([cand]);
+      if (satisfies(trial)) {
+        result.push(cand);
+      }
+      // If we can't add more due to constraints, break
+      if (!remaining.length && result.length < count) break;
+    }
+    // Pad with nulls if not enough
+    while (result.length < count) result.push(null);
+    return result;
   }
 
   _render(reel, item) {
@@ -129,7 +189,8 @@ export class SlotMachine {
   }
 
   // Seed reels with random items immediately (no sounds/animation)
-  seed() {
+  seed(opts = {}) {
+    const strict = !!opts.strict;
     // Group by sourceKey to respect uniqueness rules like spin()
     const groups = new Map();
     this.reelsConfig.forEach(cfg => {
@@ -143,7 +204,10 @@ export class SlotMachine {
       let picks = [];
 
       const anyGroupBy = cfgs.find(c => c.groupByField);
-      if (anyGroupBy) {
+      if (strict && (sourceKey === 'strat')) {
+        // In strict mode for stratagems, enforce constraints even during seeding
+        picks = this._pickStratagemsWithConstraints(source, cfgs.length);
+      } else if (anyGroupBy) {
         const field = anyGroupBy.groupByField;
         const buckets = new Map();
         source.forEach(item => {
