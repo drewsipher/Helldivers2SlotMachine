@@ -151,6 +151,25 @@ main {
   .reel img { max-width: 100px; max-height: 100px; }
 }
 @media (max-width: 640px) {
-  .reels { grid-template-columns: 1fr; }
-  .machine--strats .reels { grid-template-columns: 1fr; }
+  main { padding: 12px; gap: 16px; }
+  .machine { padding: 14px; }
+  .slot-frame { padding: 12px; }
+  .reels { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  /* Keep all three loadout reels side by side on typical phones */
+  .machine--loadout .reels { grid-template-columns: repeat(3, 1fr); }
+  /* Use two columns for stratagems on phones to avoid cramped tiles */
+  .machine--strats .reels { grid-template-columns: repeat(2, 1fr); }
+  .reel .reel-window { height: 100px; }
+  .reel img { max-width: 84px; max-height: 84px; }
+  .label { font-size: 14px; }
+  .result-text { font-size: 12px; min-height: 18px; }
+  .machine-title h2 { font-size: 20px; }
+  .subtitle { font-size: 14px; }
+}
+@media (max-width: 380px) {
+  /* On very narrow screens, switch loadout to 2 columns as well */
+  .machine--loadout .reels { grid-template-columns: repeat(2, 1fr); }
+  .reels { gap: 10px; }
+  .reel .reel-window { height: 90px; }
+  .reel img { max-width: 74px; max-height: 74px; }
 }
