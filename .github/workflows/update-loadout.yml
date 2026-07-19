@@ -1,0 +1,51 @@
+name: Update loadout data
+
+on:
+  schedule:
+    # Weekly, Mondays 09:00 UTC — new warbonds land roughly monthly
+    - cron: '0 9 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-loadout
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch latest loadout data
+        run: python scripts/fetch_loadout.py --output helldivers_2_loadout.csv
+
+      - name: Download and resize images
+        run: |
+          python scripts/process_images.py \
+            --input helldivers_2_loadout.csv \
+            --output helldivers_2_loadout_with_resized.csv \
+            --max-size 300 \
+            --prune
+
+      - name: Commit and push if changed
+        run: |
+          git add -A helldivers_2_loadout.csv helldivers_2_loadout_with_resized.csv assets/images
+          if git diff --cached --quiet; then
+            echo "No changes — data is up to date."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Automated loadout data update"
+          git push

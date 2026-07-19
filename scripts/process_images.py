@@ -250,6 +250,38 @@ def process_csv(input_csv: Path, output_csv: Path, assets_root: Path, max_size: 
     print(f"Wrote updated CSV: {output_csv}")
 
 
+def prune_unreferenced(output_csv: Path, assets_root: Path) -> None:
+    """Delete image files under assets_root not referenced by the output CSV
+    (items get renamed/removed as the game updates)."""
+    used: set[Path] = set()
+    with output_csv.open(newline="", encoding="utf-8") as f:
+        for row in csv.DictReader(f):
+            rel = row.get("Resized Image Path", "")
+            if not rel:
+                continue
+            resized = Path(rel)
+            try:
+                under_root = resized.relative_to(Path("assets") / "images")
+            except ValueError:
+                continue
+            used.add((assets_root / under_root).resolve())
+            original = Path(str(under_root).replace("resized", "original", 1))
+            used.add((assets_root / original).resolve())
+
+    removed = 0
+    for p in sorted(assets_root.rglob("*")):
+        if p.is_file() and p.resolve() not in used:
+            p.unlink()
+            removed += 1
+    # Drop now-empty directories
+    for d in sorted((p for p in assets_root.rglob("*") if p.is_dir()), reverse=True):
+        try:
+            d.rmdir()
+        except OSError:
+            pass
+    print(f"Pruned {removed} unreferenced image files")
+
+
 def main(argv: Optional[list[str]] = None) -> int:
     parser = argparse.ArgumentParser(description="Download and resize images from CSV")
     parser.add_argument("--input", "-i", type=str, default="Helldivers Weapons and Strategems - helldivers_2_loadout.csv",
@@ -260,6 +292,8 @@ def main(argv: Optional[list[str]] = None) -> int:
                         help="Root folder to store images (default: assets/images)")
     parser.add_argument("--max-size", type=int, default=DEFAULT_MAX_SIZE,
                         help="Max width/height for resized images (default: 300)")
+    parser.add_argument("--prune", action="store_true",
+                        help="Delete image files not referenced by the output CSV")
 
     args = parser.parse_args(argv)
 
@@ -273,6 +307,8 @@ def main(argv: Optional[list[str]] = None) -> int:
 
     try:
         process_csv(input_csv, output_csv, assets_root, args.max_size)
+        if args.prune:
+            prune_unreferenced(output_csv, assets_root)
     except KeyboardInterrupt:
         print("Aborted", file=sys.stderr)
         return 130

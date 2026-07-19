@@ -1,0 +1,203 @@
+Category,Type,Subtype,Has Backpack,Name,Source,Image Link
+Booster,Booster,,False,Armed Resupply Pods,,https://helldivers.wiki.gg/images/Armed_Resupply_Pods_Booster_Icon.svg
+Booster,Booster,,False,Concealed Insertion,,https://helldivers.wiki.gg/images/Concealed_Insertion_Booster_Icon.svg
+Booster,Booster,,False,Dead Sprint,,https://helldivers.wiki.gg/images/Dead_Sprint_Booster_Icon.svg
+Booster,Booster,,False,Experimental Infusion,,https://helldivers.wiki.gg/images/Experimental_Infusion_Booster_Icon.svg
+Booster,Booster,,False,Expert Extraction Pilot,,https://helldivers.wiki.gg/images/Expert_Extraction_Pilot_Booster_Icon.svg
+Booster,Booster,,False,Firebomb Hellpods,,https://helldivers.wiki.gg/images/Firebomb_Hellpods_Booster_Icon.svg
+Booster,Booster,,False,Flexible Reinforcement Budget,,https://helldivers.wiki.gg/images/Flexible_Reinforcement_Budget_Booster_Icon.svg
+Booster,Booster,,False,Hellpod Space Optimization,,https://helldivers.wiki.gg/images/Hellpod_Space_Optimization_Booster_Icon.svg
+Booster,Booster,,False,Increased Reinforcement Budget,,https://helldivers.wiki.gg/images/Increased_Reinforcement_Budget_Booster_Icon.svg
+Booster,Booster,,False,Localization Confusion,,https://helldivers.wiki.gg/images/Localization_Confusion_Booster_Icon.svg
+Booster,Booster,,False,Motivational Shocks,,https://helldivers.wiki.gg/images/Motivational_Shocks_Booster_Icon.svg
+Booster,Booster,,False,Muscle Enhancement,,https://helldivers.wiki.gg/images/Muscle_Enhancement_Booster_Icon.svg
+Booster,Booster,,False,Sample Extricator,,https://helldivers.wiki.gg/images/Sample_Extricator_Booster_Icon.svg
+Booster,Booster,,False,Sample Scanner,,https://helldivers.wiki.gg/images/Sample_Scanner_Booster_Icon.svg
+Booster,Booster,,False,Stamina Enhancement,,https://helldivers.wiki.gg/images/Stamina_Enhancement_Booster_Icon.svg
+Booster,Booster,,False,Stun Pods,,https://helldivers.wiki.gg/images/Stun_Pods_Booster_Icon.svg
+Booster,Booster,,False,UAV Recon Booster,,https://helldivers.wiki.gg/images/UAV_Recon_Booster_Booster_Icon.svg
+Booster,Booster,,False,Vitality Enhancement,,https://helldivers.wiki.gg/images/Vitality_Enhancement_Booster_Icon.svg
+Strategem,Backpack,Guard Dog,True,AX/AR-23 Guard Dog,Engineering Bay,https://helldivers.wiki.gg/images/Guard_Dog_Stratagem_Icon_Background.svg
+Strategem,Backpack,K-9,True,AX/ARC-3 K-9,Force of Law,https://helldivers.wiki.gg/images/K-9_Stratagem_Icon_Background.svg
+Strategem,Backpack,Hot Dog,True,AX/FLAM-75 Hot Dog,Python Commandos,https://helldivers.wiki.gg/images/Hot_Dog_Stratagem_Icon_Background.svg
+Strategem,Backpack,Rover,True,AX/LAS-5 Rover,Engineering Bay,https://helldivers.wiki.gg/images/Rover_Stratagem_Icon_Background.svg
+Strategem,Backpack,Dog Breath,True,AX/TX-13 Dog Breath,Chemical Agents,https://helldivers.wiki.gg/images/Dog_Breath_Stratagem_Icon_Background.svg
+Strategem,Backpack,Supply Pack,True,B-1 Supply Pack,Engineering Bay,https://helldivers.wiki.gg/images/Supply_Pack_Stratagem_Icon_Background.svg
+Strategem,Backpack,Portable Hellbomb,True,B-100 Portable Hellbomb,Servants of Freedom,https://helldivers.wiki.gg/images/Portable_Hellbomb_Stratagem_Icon_Background.svg
+Strategem,Backpack,Hover Pack,True,Hover Pack,Borderline Justice,https://helldivers.wiki.gg/images/Hover_Pack_Stratagem_Icon_Background.svg
+Strategem,Backpack,Warp Pack,True,LIFT-182 Warp Pack,Control Group,https://helldivers.wiki.gg/images/Warp_Pack_Stratagem_Icon_Background.svg
+Strategem,Backpack,Jump Pack,True,LIFT-850 Jump Pack,Hangar,https://helldivers.wiki.gg/images/Jump_Pack_Stratagem_Icon_Background.svg
+Strategem,Backpack,Ballistic Shield Backpack,True,SH-20 Ballistic Shield Backpack,Engineering Bay,https://helldivers.wiki.gg/images/Ballistic_Shield_Backpack_Stratagem_Icon_Background.svg
+Strategem,Backpack,Shield Generator Pack,True,SH-32 Shield Generator Pack,Engineering Bay,https://helldivers.wiki.gg/images/Shield_Generator_Pack_Stratagem_Icon_Background.svg
+Strategem,Backpack,Directional Shield,True,SH-51 Directional Shield,Urban Legends,https://helldivers.wiki.gg/images/Directional_Shield_Stratagem_Icon_Background.svg
+Strategem,Eagle,Eagle 110mm Rocket Pods,False,Eagle 110mm Rocket Pods,Hangar,https://helldivers.wiki.gg/images/Eagle_110mm_Rocket_Pods_Stratagem_Icon_Background.svg
+Strategem,Eagle,Eagle 500kg Bomb,False,Eagle 500kg Bomb,Hangar,https://helldivers.wiki.gg/images/Eagle_500kg_Bomb_Stratagem_Icon_Background.svg
+Strategem,Eagle,Eagle Airstrike,False,Eagle Airstrike,Hangar,https://helldivers.wiki.gg/images/Eagle_Airstrike_Stratagem_Icon_Background.svg
+Strategem,Eagle,Eagle Cluster Bomb,False,Eagle Cluster Bomb,Hangar,https://helldivers.wiki.gg/images/Eagle_Cluster_Bomb_Stratagem_Icon_Background.svg
+Strategem,Eagle,Eagle Napalm Airstrike,False,Eagle Napalm Airstrike,Hangar,https://helldivers.wiki.gg/images/Eagle_Napalm_Airstrike_Stratagem_Icon_Background.svg
+Strategem,Eagle,Eagle Smoke Strike,False,Eagle Smoke Strike,Hangar,https://helldivers.wiki.gg/images/Eagle_Smoke_Strike_Stratagem_Icon_Background.svg
+Strategem,Eagle,Eagle Strafing Run,False,Eagle Strafing Run,Hangar,https://helldivers.wiki.gg/images/Eagle_Strafing_Run_Stratagem_Icon_Background.svg
+Strategem,Emplacement,Anti-Tank Emplacement,False,E/AT-12 Anti-Tank Emplacement,Urban Legends,https://helldivers.wiki.gg/images/Anti-Tank_Emplacement_Stratagem_Icon_Background.svg
+Strategem,Emplacement,Grenadier Battlement,False,E/GL-21 Grenadier Battlement,Bridge,https://helldivers.wiki.gg/images/Grenadier_Battlement_Stratagem_Icon_Background.svg
+Strategem,Emplacement,HMG Emplacement,False,E/MG-101 HMG Emplacement,Bridge,https://helldivers.wiki.gg/images/HMG_Emplacement_Stratagem_Icon_Background.svg
+Strategem,Emplacement,Shield Generator Relay,False,FX-12 Shield Generator Relay,Bridge,https://helldivers.wiki.gg/images/Shield_Generator_Relay_Stratagem_Icon_Background.svg
+Strategem,Emplacement,Anti-Tank Mines,False,MD-17 Anti-Tank Mines,Engineering Bay,https://helldivers.wiki.gg/images/Anti-Tank_Mines_Stratagem_Icon_Background.svg
+Strategem,Emplacement,Anti-Personnel Minefield,False,MD-6 Anti-Personnel Minefield,Engineering Bay,https://helldivers.wiki.gg/images/Anti-Personnel_Minefield_Stratagem_Icon_Background.svg
+Strategem,Emplacement,Gas Mines,False,MD-8 Gas Mines,Engineering Bay,https://helldivers.wiki.gg/images/Gas_Mines_Stratagem_Icon_Background.svg
+Strategem,Emplacement,Incendiary Mines,False,MD-I4 Incendiary Mines,Engineering Bay,https://helldivers.wiki.gg/images/Incendiary_Mines_Stratagem_Icon_Background.svg
+Strategem,Orbital,Orbital 120mm HE Barrage,False,Orbital 120mm HE Barrage,Orbital Cannons,https://helldivers.wiki.gg/images/Orbital_120mm_HE_Barrage_Stratagem_Icon_Background.svg
+Strategem,Orbital,Orbital 380mm HE Barrage,False,Orbital 380mm HE Barrage,Orbital Cannons,https://helldivers.wiki.gg/images/Orbital_380mm_HE_Barrage_Stratagem_Icon_Background.svg
+Strategem,Orbital,Orbital Airburst Strike,False,Orbital Airburst Strike,Orbital Cannons,https://helldivers.wiki.gg/images/Orbital_Airburst_Strike_Stratagem_Icon_Background.svg
+Strategem,Orbital,Orbital EMS Strike,False,Orbital EMS Strike,Bridge,https://helldivers.wiki.gg/images/Orbital_EMS_Strike_Stratagem_Icon_Background.svg
+Strategem,Orbital,Orbital Gas Strike,False,Orbital Gas Strike,Bridge,https://helldivers.wiki.gg/images/Orbital_Gas_Strike_Stratagem_Icon_Background.svg
+Strategem,Orbital,Orbital Gatling Barrage,False,Orbital Gatling Barrage,Orbital Cannons,https://helldivers.wiki.gg/images/Orbital_Gatling_Barrage_Stratagem_Icon_Background.svg
+Strategem,Orbital,Orbital Laser,False,Orbital Laser,Orbital Cannons,https://helldivers.wiki.gg/images/Orbital_Laser_Stratagem_Icon_Background.svg
+Strategem,Orbital,Orbital Napalm Barrage,False,Orbital Napalm Barrage,Orbital Cannons,https://helldivers.wiki.gg/images/Orbital_Napalm_Barrage_Stratagem_Icon_Background.svg
+Strategem,Orbital,Orbital Precision Strike,False,Orbital Precision Strike,Bridge,https://helldivers.wiki.gg/images/Orbital_Precision_Strike_Stratagem_Icon_Background.svg
+Strategem,Orbital,Orbital Railcannon Strike,False,Orbital Railcannon Strike,Orbital Cannons,https://helldivers.wiki.gg/images/Orbital_Railcannon_Strike_Stratagem_Icon_Background.svg
+Strategem,Orbital,Orbital Smoke Strike,False,Orbital Smoke Strike,Bridge,https://helldivers.wiki.gg/images/Orbital_Smoke_Strike_Stratagem_Icon_Background.svg
+Strategem,Orbital,Orbital Walking Barrage,False,Orbital Walking Barrage,Orbital Cannons,https://helldivers.wiki.gg/images/Orbital_Walking_Barrage_Stratagem_Icon_Background.svg
+Strategem,Sentry,Autocannon Sentry,False,A/AC-8 Autocannon Sentry,Robotics Workshop,https://helldivers.wiki.gg/images/Autocannon_Sentry_Stratagem_Icon_Background.svg
+Strategem,Sentry,Tesla Tower,False,A/ARC-3 Tesla Tower,Bridge,https://helldivers.wiki.gg/images/Tesla_Tower_Stratagem_Icon_Background.svg
+Strategem,Sentry,Flame Sentry,False,A/FLAM-40 Flame Sentry,Urban Legends,https://helldivers.wiki.gg/images/Flame_Sentry_Stratagem_Icon_Background.svg
+Strategem,Sentry,Gatling Sentry,False,A/G-16 Gatling Sentry,Robotics Workshop,https://helldivers.wiki.gg/images/Gatling_Sentry_Stratagem_Icon_Background.svg
+Strategem,Sentry,Gas Mortar Sentry,False,A/GM-17 Gas Mortar Sentry,Entrenched Division,https://helldivers.wiki.gg/images/Gas_Mortar_Sentry_Stratagem_Icon_Background.svg
+Strategem,Sentry,Laser Sentry,False,A/LAS-98 Laser Sentry,Control Group,https://helldivers.wiki.gg/images/Laser_Sentry_Stratagem_Icon_Background.svg
+Strategem,Sentry,Mortar Sentry,False,A/M-12 Mortar Sentry,Robotics Workshop,https://helldivers.wiki.gg/images/Mortar_Sentry_Stratagem_Icon_Background.svg
+Strategem,Sentry,EMS Mortar Sentry,False,A/M-23 EMS Mortar Sentry,Robotics Workshop,https://helldivers.wiki.gg/images/EMS_Mortar_Sentry_Stratagem_Icon_Background.svg
+Strategem,Sentry,Machine Gun Sentry,False,A/MG-43 Machine Gun Sentry,Robotics Workshop,https://helldivers.wiki.gg/images/Machine_Gun_Sentry_Stratagem_Icon_Background.svg
+Strategem,Sentry,Rocket Sentry,False,A/MLS-4X Rocket Sentry,Robotics Workshop,https://helldivers.wiki.gg/images/Rocket_Sentry_Stratagem_Icon_Background.svg
+Strategem,Support Weapon,Autocannon,True,AC-8 Autocannon,Patriotic Administration Center,https://helldivers.wiki.gg/images/Autocannon_Stratagem_Icon_Background.svg
+Strategem,Support Weapon,Anti-Materiel Rifle,False,APW-1 Anti-Materiel Rifle,Patriotic Administration Center,https://helldivers.wiki.gg/images/Anti-Materiel_Rifle_Stratagem_Icon_Background.svg
+Strategem,Support Weapon,Arc Thrower,False,ARC-3 Arc Thrower,Engineering Bay,https://helldivers.wiki.gg/images/Arc_Thrower_Stratagem_Icon_Background.svg
+Strategem,Support Weapon,Cremator,True,B/FLAM-80 Cremator,Entrenched Division,https://helldivers.wiki.gg/images/Cremator_Stratagem_Icon_Background.svg
+Strategem,Support Weapon,B/MD C4 Pack,True,B/MD C4 Pack,Redacted Regiment,https://helldivers.wiki.gg/images/C4_Pack_Stratagem_Icon_Background.svg
+Strategem,Support Weapon,One True Flag,False,CQC-1 One True Flag,Masters of Ceremony,https://helldivers.wiki.gg/images/One_True_Flag_Stratagem_Icon_Background.svg
+Strategem,Support Weapon,Breaching Hammer,False,CQC-20 Breaching Hammer,Siege Breakers,https://helldivers.wiki.gg/images/Breaching_Hammer_Stratagem_Icon_Background.svg
+Strategem,Support Weapon,Defoliation Tool,False,CQC-9 Defoliation Tool,Python Commandos,https://helldivers.wiki.gg/images/Defoliation_Tool_Stratagem_Icon_Background.svg
+Strategem,Support Weapon,Expendable,False,EAT-17 Expendable Anti-Tank,Patriotic Administration Center,https://helldivers.wiki.gg/images/Expendable_Anti-Tank_Stratagem_Icon_Background.svg
+Strategem,Support Weapon,Expendable,False,EAT-411 Leveller,Siege Breakers,https://helldivers.wiki.gg/images/Leveller_Stratagem_Icon_Background.svg
+Strategem,Support Weapon,Expendable,False,EAT-700 Expendable Napalm,Dust Devils,https://helldivers.wiki.gg/images/Expendable_Napalm_Stratagem_Icon_Background.svg
+Strategem,Support Weapon,Spear,True,FAF-14 Spear,Patriotic Administration Center,https://helldivers.wiki.gg/images/Spear_Stratagem_Icon_Background.svg
+Strategem,Support Weapon,Flamethrower,False,FLAM-40 Flamethrower,Patriotic Administration Center,https://helldivers.wiki.gg/images/Flamethrower_Stratagem_Icon_Background.svg
+Strategem,Support Weapon,Grenade Launcher,False,GL-21 Grenade Launcher,Engineering Bay,https://helldivers.wiki.gg/images/Grenade_Launcher_Stratagem_Icon_Background.svg
+Strategem,Support Weapon,Belt-Fed Grenade Launcher,True,GL-28 Belt-Fed Grenade Launcher,Siege Breakers,https://helldivers.wiki.gg/images/Belt-Fed_Grenade_Launcher_Stratagem_Icon_Background.svg
+Strategem,Support Weapon,De-Escalator,False,GL-52 De-Escalator,Force of Law,https://helldivers.wiki.gg/images/De-Escalator_Stratagem_Icon_Background.svg
+Strategem,Support Weapon,Recoilless Rifle,True,GR-8 Recoilless Rifle,Patriotic Administration Center,https://helldivers.wiki.gg/images/Recoilless_Rifle_Stratagem_Icon_Background.svg
+Strategem,Support Weapon,Laser Cannon,False,LAS-98 Laser Cannon,Engineering Bay,https://helldivers.wiki.gg/images/Laser_Cannon_Stratagem_Icon_Background.svg
+Strategem,Support Weapon,Quasar Cannon,False,LAS-99 Quasar Cannon,Engineering Bay,https://helldivers.wiki.gg/images/Quasar_Cannon_Stratagem_Icon_Background.svg
+Strategem,Support Weapon,Maxigun,True,M-1000 Maxigun,Python Commandos,https://helldivers.wiki.gg/images/Maxigun_Stratagem_Icon_Background.svg
+Strategem,Support Weapon,Stalwart,False,M-105 Stalwart,Patriotic Administration Center,https://helldivers.wiki.gg/images/Stalwart_Stratagem_Icon_Background.svg
+Strategem,Support Weapon,Heavy Machine Gun,False,MG-206 Heavy Machine Gun,Patriotic Administration Center,https://helldivers.wiki.gg/images/Heavy_Machine_Gun_Stratagem_Icon_Background.svg
+Strategem,Support Weapon,Machine Gun,False,MG-43 Machine Gun,Patriotic Administration Center,https://helldivers.wiki.gg/images/Machine_Gun_Stratagem_Icon_Background.svg
+Strategem,Support Weapon,Expendable,False,MGX-42 Bullet Storm,Exo Experts,https://helldivers.wiki.gg/images/Bullet_Storm_Stratagem_Icon_Background.svg
+Strategem,Support Weapon,Expendable,False,MLS-4X Commando,Patriotic Administration Center,https://helldivers.wiki.gg/images/Commando_Stratagem_Icon_Background.svg
+Strategem,Support Weapon,Expendable,False,MS-11 Solo Silo,Dust Devils,https://helldivers.wiki.gg/images/Solo_Silo_Stratagem_Icon_Background.svg
+Strategem,Support Weapon,Epoch,False,PLAS-45 Epoch,Control Group,https://helldivers.wiki.gg/images/Epoch_Stratagem_Icon_Background.svg
+Strategem,Support Weapon,Airburst Rocket Launcher,True,RL-77 Airburst Rocket Launcher,Patriotic Administration Center,https://helldivers.wiki.gg/images/Airburst_Rocket_Launcher_Stratagem_Icon_Background.svg
+Strategem,Support Weapon,Railgun,False,RS-422 Railgun,Patriotic Administration Center,https://helldivers.wiki.gg/images/Railgun_Stratagem_Icon_Background.svg
+Strategem,Support Weapon,Speargun,False,S-11 Speargun,Dust Devils,https://helldivers.wiki.gg/images/Speargun_Stratagem_Icon_Background.svg
+Strategem,Support Weapon,W.A.S.P. Launcher,True,StA-X3 W.A.S.P. Launcher,Patriotic Administration Center,https://helldivers.wiki.gg/images/W.A.S.P._Launcher_Stratagem_Icon_Background.svg
+Strategem,Support Weapon,Sterilizer,False,TX-41 Sterilizer,Chemical Agents,https://helldivers.wiki.gg/images/Sterilizer_Stratagem_Icon_Background.svg
+Strategem,Vehicle,Patriot Exosuit,False,EXO-45 Patriot Exosuit,Robotics Workshop,https://helldivers.wiki.gg/images/Patriot_Exosuit_Stratagem_Icon_Background.svg
+Strategem,Vehicle,Emancipator Exosuit,False,EXO-49 Emancipator Exosuit,Robotics Workshop,https://helldivers.wiki.gg/images/Emancipator_Exosuit_Stratagem_Icon_Background.svg
+Strategem,Vehicle,Lumberer Exosuit,False,EXO-51 Lumberer Exosuit,Exo Experts,https://helldivers.wiki.gg/images/Lumberer_Exosuit_Stratagem_Icon_Background.svg
+Strategem,Vehicle,Breakthrough Exosuit,False,EXO-55 Breakthrough Exosuit,Exo Experts,https://helldivers.wiki.gg/images/Breakthrough_Exosuit_Stratagem_Icon_Background.svg
+Strategem,Vehicle,Fast Recon Vehicle,False,M-102 Fast Recon Vehicle,Hangar,https://helldivers.wiki.gg/images/Fast_Recon_Vehicle_Stratagem_Icon_Background.svg
+Strategem,Vehicle,Incinerator FRV,False,M-104 Incinerator FRV,Hangar,https://helldivers.wiki.gg/images/Incinerator_FRV_Stratagem_Icon_Background.svg
+Strategem,Vehicle,Supply FRV,False,Supply FRV,Hangar,https://helldivers.wiki.gg/images/Supply_FRV_Stratagem_Icon_Background.svg
+Strategem,Vehicle,Bastion MK XVI,False,TD-220 Bastion MK XVI,Hangar,https://helldivers.wiki.gg/images/Bastion_MK_XVI_Stratagem_Icon_Background.svg
+Weapon,Grenade,Standard,False,G-10 Incendiary,Steeled Veterans,https://helldivers.wiki.gg/images/G-10_Incendiary_Throwable_Render.png
+Weapon,Grenade,Special,False,G-109 Urchin,Force of Law,https://helldivers.wiki.gg/images/G-109_Urchin_Throwable_Render.png
+Weapon,Grenade,Standard,False,G-12 High Explosive,Starter Equipment,https://helldivers.wiki.gg/images/G-12_High_Explosive_Throwable_Render.png
+Weapon,Grenade,Special,False,G-123 Thermite,Democratic Detonation,https://helldivers.wiki.gg/images/G-123_Thermite_Throwable_Render.png
+Weapon,Grenade,Special,False,G-13 Incendiary Impact,Polar Patriots,https://helldivers.wiki.gg/images/G-13_Incendiary_Impact_Throwable_Render.png
+Weapon,Grenade,Special,False,G-142 Pyrotech,Masters of Ceremony,https://helldivers.wiki.gg/images/G-142_Pyrotech_Throwable_Render.png
+Weapon,Grenade,Special,False,G-16 Impact,Helldivers Mobilize!,https://helldivers.wiki.gg/images/G-16_Impact_Throwable_Render.png
+Weapon,Grenade,Special,False,G-23 Stun,Cutting Edge,https://helldivers.wiki.gg/images/G-23_Stun_Throwable_Render.png
+Weapon,Grenade,Special,False,G-3 Smoke,Helldivers Mobilize!,https://helldivers.wiki.gg/images/G-3_Smoke_Throwable_Render.png
+Weapon,Grenade,Special,False,G-31 Arc,Control Group,https://helldivers.wiki.gg/images/G-31_ARC_Throwable_Render.png
+Weapon,Grenade,Special,False,G-4 Gas,Chemical Agents,https://helldivers.wiki.gg/images/G-4_Gas_Throwable_Render.png
+Weapon,Grenade,Special,False,G-48 Giga Grenade,Entrenched Division,https://helldivers.wiki.gg/images/G-48_Giga_Grenade_Throwable_Render.png
+Weapon,Grenade,Special,False,G-50 Seeker,Servants of Freedom,https://helldivers.wiki.gg/images/G-50_Seeker_Throwable_Render.png
+Weapon,Grenade,Standard,False,G-6 Frag,Helldivers Mobilize!,https://helldivers.wiki.gg/images/G-6_Frag_Throwable_Render.png
+Weapon,Grenade,Standard,False,G-7 Pineapple,Dust Devils,https://helldivers.wiki.gg/images/G-7_Pineapple_Throwable_Render.png
+Weapon,Grenade,Special,False,G-89 Smokescreen,Superstore,https://helldivers.wiki.gg/images/G-89_Smokescreen_Throwable_Render.png
+Weapon,Grenade,Special,False,G/SH-39 Shield,Siege Breakers,https://helldivers.wiki.gg/images/G-SH-39_Shield_Throwable_Render.png
+Weapon,Grenade,Special,False,K-2 Throwing Knife,Viper Commandos,https://helldivers.wiki.gg/images/K-2_Throwing_Knife_Throwable_Render.png
+Weapon,Grenade,Standard,False,TED-63 Dynamite,Borderline Justice,https://helldivers.wiki.gg/images/TED-63_Dynamite_Throwable_Render.png
+Weapon,Grenade,Special,False,TM-1 Lure Mine,Redacted Regiment,https://helldivers.wiki.gg/images/TM-1_Lure_Mine_Throwable_Render.png
+Weapon,Primary,Assault Rifles,False,AR-2 Coyote,Dust Devils,https://helldivers.wiki.gg/images/AR-2_Coyote_Primary_Render.png
+Weapon,Primary,Assault Rifles,False,AR-23 Liberator,Starter Equipment,https://helldivers.wiki.gg/images/AR-23_Liberator_Primary_Render.png
+Weapon,Primary,Assault Rifles,False,AR-23A Liberator Carbine,Viper Commandos,https://helldivers.wiki.gg/images/AR-23A_Liberator_Carbine_Primary_Render.png
+Weapon,Primary,Assault Rifles,False,AR-23C Liberator Concussive,Steeled Veterans,https://helldivers.wiki.gg/images/AR-23C_Liberator_Concussive_Primary_Render.png
+Weapon,Primary,Assault Rifles,False,AR-23P Liberator Penetrator,Helldivers Mobilize,https://helldivers.wiki.gg/images/AR-23P_Liberator_Penetrator_Primary_Render.png
+Weapon,Primary,Assault Rifles,False,AR-32 Pacifier,Force of Law,https://helldivers.wiki.gg/images/AR-32_Pacifier_Primary_Render.png
+Weapon,Primary,Assault Rifles,False,AR-59 Suppressor,Redacted Regiment,https://helldivers.wiki.gg/images/AR-59_Suppressor_Primary_Render.png
+Weapon,Primary,Assault Rifles,False,AR-61 Tenderizer,Polar Patriots,https://helldivers.wiki.gg/images/AR-61_Tenderizer_Primary_Render.png
+Weapon,Primary,Assault Rifles,False,AR/GL-21 One-Two,Python Commandos,https://helldivers.wiki.gg/images/AR-GL-21_One_Two_Primary_Render.png
+Weapon,Primary,Energy-Based,False,ARC-12 Blitzer,Cutting Edge,https://helldivers.wiki.gg/images/ARC-12_Blitzer_Primary_Render.png
+Weapon,Primary,Assault Rifles,False,BR-14 Adjudicator,Democratic Detonation,https://helldivers.wiki.gg/images/BR-14_Adjudicator_Primary_Render.png
+Weapon,Primary,Explosives,False,CB-9 Exploding Crossbow,Democratic Detonation,https://helldivers.wiki.gg/images/CB-9_Exploding_Crossbow_Primary_Render.png
+Weapon,Primary,Shotguns,False,DBS-2 Double Freedom,Superstore,https://helldivers.wiki.gg/images/DBS-2_Shotgun_Primary_Render.png
+Weapon,Primary,Special,False,FLAM-66 Torcher,Freedom's Flame,https://helldivers.wiki.gg/images/FLAM-66_Torcher_Primary_Render.png
+Weapon,Primary,Special,False,JAR-5 Dominator,Steeled Veterans,https://helldivers.wiki.gg/images/JAR-5_Dominator_Primary_Render.png
+Weapon,Primary,Energy-Based,False,LAS-13 Trident,Siege Breakers,https://helldivers.wiki.gg/images/LAS-13_Trident_Primary_Render.png
+Weapon,Primary,Energy-Based,False,LAS-16 Sickle,Cutting Edge,https://helldivers.wiki.gg/images/LAS-16_Sickle_Primary_Render.png
+Weapon,Primary,Energy-Based,False,LAS-17 Double-Edge Sickle,Servants of Freedom,https://helldivers.wiki.gg/images/LAS-17_Double-Edge_Sickle_Primary_Render.png
+Weapon,Primary,Energy-Based,False,LAS-5 Scythe,Helldivers Mobilize!,https://helldivers.wiki.gg/images/LAS-5_Scythe_Primary_Render.png
+Weapon,Primary,Submachine Guns,False,M7S SMG,Halo: ODST,https://helldivers.wiki.gg/images/M7S_SMG_Primary_Render.png
+Weapon,Primary,Shotguns,False,M90A Shotgun,Halo: ODST,https://helldivers.wiki.gg/images/M90A_Shotgun_Primary_Render.png
+Weapon,Primary,Assault Rifles,False,MA5C Assault Rifle,Halo: ODST,https://helldivers.wiki.gg/images/MA5C_Assault_Rifle_Primary_Render.png
+Weapon,Primary,Submachine Guns,False,MP-98 Knight,Super Citizen Edition,https://helldivers.wiki.gg/images/MP-98_Knight_Primary_Render.png
+Weapon,Primary,Energy-Based,False,PLAS-1 Scorcher,Helldivers Mobilize!,https://helldivers.wiki.gg/images/PLAS-1_Scorcher_Primary_Render.png
+Weapon,Primary,Energy-Based,False,PLAS-101 Purifier,Polar Patriots,https://helldivers.wiki.gg/images/PLAS-101_Purifier_Primary_Render.png
+Weapon,Primary,Energy-Based,False,PLAS-39 Accelerator Rifle,Righteous Revenants,https://helldivers.wiki.gg/images/PLAS-39_Accelerator_Rifle_Primary_Render.png
+Weapon,Primary,Marksman Rifles,False,R-2 Amendment,Masters of Ceremony,https://helldivers.wiki.gg/images/R-2_Amendment_Primary_Render.png
+Weapon,Primary,Marksman Rifles,False,R-2124 Constitution,Liberty Day,https://helldivers.wiki.gg/images/R-2124_Constitution_Primary_Render.png
+Weapon,Primary,Explosives,False,R-36 Eruptor,Democratic Detonation,https://helldivers.wiki.gg/images/R-36_Eruptor_Primary_Render.png
+Weapon,Primary,Marksman Rifles,False,R-4 Hyena,Celestial Fence,https://helldivers.wiki.gg/images/R-4_Hyena_Primary_Render.png
+Weapon,Primary,Marksman Rifles,False,R-6 Deadeye,Borderline Justice,https://helldivers.wiki.gg/images/R-6_Deadeye_Primary_Render.png
+Weapon,Primary,Marksman Rifles,False,R-63 Diligence,Helldivers Mobilize!,https://helldivers.wiki.gg/images/R-63_Diligence_Primary_Render.png
+Weapon,Primary,Marksman Rifles,False,R-63CS Diligence Counter Sniper,Helldivers Mobilize!,https://helldivers.wiki.gg/images/R-63CS_Diligence_Counter_Sniper_Primary_Render.png
+Weapon,Primary,Marksman Rifles,False,R-72 Censor,Redacted Regiment,https://helldivers.wiki.gg/images/R-72_Censor_Primary_Render.png
+Weapon,Primary,Shotguns,False,SG-20 Halt,Truth Enforcers,https://helldivers.wiki.gg/images/SG-20_Halt_Primary_Render.png
+Weapon,Primary,Shotguns,False,SG-225 Breaker,Helldivers Mobilize!,https://helldivers.wiki.gg/images/SG-225_Breaker_Primary_Render.png
+Weapon,Primary,Shotguns,False,SG-225IE Breaker Incendiary,Steeled Veterans,https://helldivers.wiki.gg/images/SG-225IE_Breaker_Incendiary_Primary_Render.png
+Weapon,Primary,Shotguns,False,SG-225SP Breaker Spray&Pray,Helldivers Mobilize!,https://helldivers.wiki.gg/images/SG-225SP_Breaker_Spray%26Pray_Primary_Render.png
+Weapon,Primary,Shotguns,False,SG-451 Cookout,Freedom's Flame,https://helldivers.wiki.gg/images/SG-451_Cookout_Primary_Render.png
+Weapon,Primary,Shotguns,False,SG-8 Punisher,Helldivers Mobilize!,https://helldivers.wiki.gg/images/SG-8_Punisher_Primary_Render.png
+Weapon,Primary,Energy-Based,False,SG-8P Punisher Plasma,Cutting Edge,https://helldivers.wiki.gg/images/SG-8P_Punisher_Plasma_Primary_Render.png
+Weapon,Primary,Shotguns,False,SG-8S Slugger,Helldivers Mobilize!,https://helldivers.wiki.gg/images/SG-8S_Slugger_Primary_Render.png
+Weapon,Primary,Shotguns,False,SG-97 Sweeper,Superstore,https://helldivers.wiki.gg/images/SG-97_Shotgun_Primary_Render.png
+Weapon,Primary,Submachine Guns,False,SMG-203 Gallant,Exo Experts,https://helldivers.wiki.gg/images/SMG-203_Gallant_Primary_Render.png
+Weapon,Primary,Submachine Guns,False,SMG-32 Reprimand,Truth Enforcers,https://helldivers.wiki.gg/images/SMG-32_Reprimand_Primary_Render.png
+Weapon,Primary,Submachine Guns,False,SMG-37 Defender,Helldivers Mobilize!,https://helldivers.wiki.gg/images/SMG-37_Defender_Primary_Render.png
+Weapon,Primary,Submachine Guns,False,SMG-72 Pummeler,Polar Patriots,https://helldivers.wiki.gg/images/SMG-72_Pummeler_Primary_Render.png
+Weapon,Primary,Submachine Guns,False,SMG/FLAM-34 Stoker,Entrenched Division,https://helldivers.wiki.gg/images/SMGFLAM-34_Stoker_Primary_Icon.png
+Weapon,Primary,Submachine Guns,False,StA-11 SMG,Righteous Revenants,https://helldivers.wiki.gg/images/StA-11_SMG_Primary_Render.png
+Weapon,Primary,Assault Rifles,False,StA-52 Assault Rifle,Righteous Revenants,https://helldivers.wiki.gg/images/StA-52_Assault_Rifle_Primary_Render.png
+Weapon,Primary,Special,False,VG-70 Variable,Control Group,https://helldivers.wiki.gg/images/VG-70_Variable_Primary_Render.png
+Weapon,Secondary,Melee,False,CQC-19 Stun Lance,Urban Legends,https://helldivers.wiki.gg/images/CQC-19_Stun_Lance_Secondary_Render.png
+Weapon,Secondary,Melee,False,CQC-2 Saber,Masters of Ceremony,https://helldivers.wiki.gg/images/CQC-2_Saber_Secondary_Render.png
+Weapon,Secondary,Melee,False,CQC-30 Stun Baton,Superstore,https://helldivers.wiki.gg/images/CQC-30_Stun_Baton_Secondary_Render.png
+Weapon,Secondary,Melee,False,CQC-42 Machete,Superstore,https://helldivers.wiki.gg/images/CQC-42_Machete_Secondary_Render.png
+Weapon,Secondary,Melee,False,CQC-5 Combat Hatchet,Superstore,https://helldivers.wiki.gg/images/CQC-5_Combat_Hatchet_Secondary_Render.png
+Weapon,Secondary,Melee,False,Entrenchment Tool,,https://helldivers.wiki.gg/images/CQC-73_Entrenchment_Tool_Secondary_Render.png
+Weapon,Secondary,Special,False,GP-20 Ultimatum,Servants of Freedom,https://helldivers.wiki.gg/images/GP-20_Ultimatum_Secondary_Render.png
+Weapon,Secondary,Special,False,GP-31 Grenade Pistol,Democratic Detonation,https://helldivers.wiki.gg/images/GP-31_Grenade_Pistol_Secondary_Render.png
+Weapon,Secondary,Special,False,LAS-58 Talon,Borderline Justice,https://helldivers.wiki.gg/images/LAS-58_Talon_Secondary_Render.png
+Weapon,Secondary,Special,False,LAS-7 Dagger,Cutting Edge,https://helldivers.wiki.gg/images/LAS-7_Dagger_Secondary_Render.png
+Weapon,Secondary,Pistols,False,M6C/SOCOM Pistol,Halo: ODST,https://helldivers.wiki.gg/images/M6C-SOCOM_Pistol_Secondary_Render.png
+Weapon,Secondary,Special,False,P-11 Stim Pistol,Chemical Agents,https://helldivers.wiki.gg/images/P-11_Stim_Pistol_Secondary_Render.png
+Weapon,Secondary,Pistols,False,P-113 Verdict,Polar Patriots,https://helldivers.wiki.gg/images/P-113_Verdict_Secondary_Render.png
+Weapon,Secondary,Pistols,False,P-19 Redeemer,Helldivers Mobilize!,https://helldivers.wiki.gg/images/P-19_Redeemer_Secondary_Render.png
+Weapon,Secondary,Pistols,False,P-2 Peacemaker,Starter Equipment,https://helldivers.wiki.gg/images/P-2_Peacemaker_Secondary_Render.png
+Weapon,Secondary,Special,False,P-33 Missile Pistol,Exo Experts,https://helldivers.wiki.gg/images/P-33_Missile_Pistol_Secondary_Render.png
+Weapon,Secondary,Special,False,P-35 Re-Educator,Redacted Regiment,https://helldivers.wiki.gg/images/P-35_Re-Educator_Secondary_Render.png
+Weapon,Secondary,Pistols,False,P-4 Senator,Steeled Veterans,https://helldivers.wiki.gg/images/P-4_Senator_Secondary_Render.png
+Weapon,Secondary,Pistols,False,P-69 Veto,Entrenched Division,https://helldivers.wiki.gg/images/P-69_Veto_Secondary_Icon.png
+Weapon,Secondary,Special,False,P-72 Crisper,Freedom's Flame,https://helldivers.wiki.gg/images/P-72_Crisper_Secondary_Render.png
+Weapon,Secondary,Pistols,False,P-92 Warrant,Superstore,https://helldivers.wiki.gg/images/P-92_Warrant_Secondary_Render.png
+Weapon,Secondary,Special,False,PLAS-15 Loyalist,Truth Enforcers,https://helldivers.wiki.gg/images/PLAS-15_Loyalist_Secondary_Render.png
+Weapon,Secondary,Special,False,SG-22 Bushwhacker,Viper Commandos,https://helldivers.wiki.gg/images/SG-22_Bushwhacker_Secondary_Render.png
