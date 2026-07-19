@@ -14,7 +14,7 @@ loadout data weekly (and on manual dispatch via the Actions tab). It:
 ## Data pipeline
 
 `scripts/fetch_loadout.py` produces the base CSV with columns
-`Category,Type,Subtype,Has Backpack,Name,Source,Image Link`:
+`Category,Type,Subtype,Has Backpack,Name,Source,Is Warbond,Image Link`:
 
 - Weapons come from the wiki's `Weapons` Cargo table (Primary/Secondary/Throwables).
 - Stratagems come from the `Stratagems` Cargo table, filtered to player-selectable
@@ -22,6 +22,9 @@ loadout data weekly (and on manual dispatch via the Actions tab). It:
   the site to avoid rolling near-identical stratagems on multiple reels.
 - `Has Backpack` and the `Expendable` subtype (used by the site's strict mode)
   come from the wiki's stratagem traits.
+- `Source`/`Is Warbond` power the site's Warbond Settings panel: warbond names
+  are normalized to the canonical titles from the wiki's `Warbonds` table, and
+  booster→warbond mapping is parsed from each warbond page's item grid.
 - Boosters come from `Category:Boosters` page listings + page images.
 
 `scripts/process_images.py` then:

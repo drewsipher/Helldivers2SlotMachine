@@ -9,7 +9,11 @@ Sources (all via the wiki's public MediaWiki/Cargo API):
 - Category:Boosters + pageimages -> boosters
 
 Output columns match the historical sheet export:
-  Category,Type,Subtype,Has Backpack,Name,Source,Image Link
+  Category,Type,Subtype,Has Backpack,Name,Source,Is Warbond,Image Link
+
+"Is Warbond" is True when Source is a (premium/legendary) warbond, so the
+site can offer per-warbond include/exclude toggles. Warbond names are
+normalized to the canonical titles from the wiki's Warbonds table.
 
 The site's strict mode relies on two conventions kept here:
 - "Has Backpack" is True for anything occupying the backpack slot
@@ -98,6 +102,58 @@ def clean_wikitext(value: str) -> str:
     return re.sub(r"\s+", " ", value).strip()
 
 
+def fetch_warbonds() -> Dict[str, str]:
+    """Map warbond page name -> canonical display title, e.g.
+    'Steeled Veterans Premium Warbond' -> 'Steeled Veterans'."""
+    raw = cargo_query("Warbonds", "_pageName,title")
+    return {
+        r["_pageName"]: (r.get("title") or r["_pageName"]).strip()
+        for r in raw
+        if r.get("_pageName")
+    }
+
+
+LINK_TARGET_RE = re.compile(r"\[\[([^|\]#]+)")
+
+
+def source_fields(raw_source: str, warbonds: Dict[str, str]) -> Dict[str, str]:
+    """Derive Source / Is Warbond from a Cargo source wikitext value.
+    Warbond links get the canonical warbond title (the wiki's display text
+    is inconsistent, e.g. 'Helldivers Mobilize' vs 'Helldivers Mobilize!')."""
+    for m in LINK_TARGET_RE.finditer(raw_source or ""):
+        # MediaWiki treats underscores and spaces as equivalent in titles.
+        target = m.group(1).replace("_", " ").strip()
+        if target in warbonds:
+            return {"Source": warbonds[target], "Is Warbond": "True"}
+    return {"Source": clean_wikitext(raw_source), "Is Warbond": "False"}
+
+
+ITEM_LINK_RE = re.compile(r"^\s*\|\s*\d+_link\s*=\s*(.+?)\s*$", re.MULTILINE)
+
+
+def fetch_warbond_contents(warbonds: Dict[str, str]) -> Dict[str, str]:
+    """Map item page title -> canonical warbond title by parsing each warbond
+    page's item-grid template (used for boosters, which have no Cargo source)."""
+    item_to_warbond: Dict[str, str] = {}
+    for batch in chunked(sorted(warbonds), 10):
+        data = api_get({
+            "action": "query",
+            "titles": "|".join(batch),
+            "prop": "revisions",
+            "rvprop": "content",
+            "rvslots": "main",
+            "formatversion": "2",
+        })
+        for page in data["query"]["pages"]:
+            title = warbonds.get(page.get("title", ""))
+            if not title or not page.get("revisions"):
+                continue
+            content = page["revisions"][0]["slots"]["main"].get("content", "")
+            for item in ITEM_LINK_RE.findall(content):
+                item_to_warbond.setdefault(item, title)
+    return item_to_warbond
+
+
 def resolve_image_urls(filenames: List[str]) -> Dict[str, str]:
     """Resolve wiki file names to their real URLs via batched imageinfo calls.
     Follows file redirects (Cargo sometimes stores a redirect's name)."""
@@ -148,7 +204,7 @@ def family_name(name: str) -> str:
     return " ".join(tokens) or name
 
 
-def fetch_weapons() -> List[Dict[str, str]]:
+def fetch_weapons(warbonds: Dict[str, str]) -> List[Dict[str, str]]:
     raw = cargo_query("Weapons", "title,image,weapon_category,weapon_type,source")
     rows = []
     for r in raw:
@@ -162,14 +218,14 @@ def fetch_weapons() -> List[Dict[str, str]]:
             "Type": wtype,
             "Subtype": clean_wikitext(r.get("weapon type", "")),
             "Has Backpack": "False",
-            "Source": clean_wikitext(r.get("source", "")),
+            **source_fields(r.get("source", ""), warbonds),
             "Image Link": "",
             "_image_file": (r.get("image") or "").strip(),
         })
     return rows
 
 
-def fetch_stratagems() -> List[Dict[str, str]]:
+def fetch_stratagems(warbonds: Dict[str, str]) -> List[Dict[str, str]]:
     raw = cargo_query("Stratagems", "title,image,stratagem_type,source,traits")
     rows = []
     for r in raw:
@@ -185,7 +241,7 @@ def fetch_stratagems() -> List[Dict[str, str]]:
             # Strict mode groups all Expendable support weapons together.
             "Subtype": "Expendable" if "Expendable" in traits else family_name(name),
             "Has Backpack": "True" if "Backpack" in traits else "False",
-            "Source": clean_wikitext(r.get("source", "")),
+            **source_fields(r.get("source", ""), warbonds),
             "Image Link": "",
             "_image_file": (r.get("image") or "").strip(),
         })
@@ -197,7 +253,7 @@ def chunked(seq: List[str], n: int) -> Iterable[List[str]]:
         yield seq[i:i + n]
 
 
-def fetch_boosters() -> List[Dict[str, str]]:
+def fetch_boosters(item_to_warbond: Dict[str, str]) -> List[Dict[str, str]]:
     data = api_get({
         "action": "query",
         "list": "categorymembers",
@@ -227,13 +283,17 @@ def fetch_boosters() -> List[Dict[str, str]]:
         url = images.get(title, "")
         if not url:
             print(f"WARNING: no image found for booster '{title}'", file=sys.stderr)
+        warbond = item_to_warbond.get(title, "")
+        if not warbond:
+            print(f"WARNING: no warbond found for booster '{title}'", file=sys.stderr)
         rows.append({
             "Category": "Booster",
             "Name": title,
             "Type": "Booster",
             "Subtype": "",
             "Has Backpack": "False",
-            "Source": "",
+            "Source": warbond,
+            "Is Warbond": "True" if warbond else "False",
             "Image Link": url,
         })
     return rows
@@ -244,7 +304,10 @@ def main(argv: Optional[List[str]] = None) -> int:
     parser.add_argument("--output", "-o", type=str, default="helldivers_2_loadout.csv")
     args = parser.parse_args(argv)
 
-    rows = fetch_weapons() + fetch_stratagems() + fetch_boosters()
+    warbonds = fetch_warbonds()
+    rows = (fetch_weapons(warbonds)
+            + fetch_stratagems(warbonds)
+            + fetch_boosters(fetch_warbond_contents(warbonds)))
 
     # Resolve wiki image filenames (weapons/stratagems) to real URLs.
     urls = resolve_image_urls([r.get("_image_file", "") for r in rows])
@@ -280,7 +343,7 @@ def main(argv: Optional[List[str]] = None) -> int:
         writer = csv.DictWriter(
             f,
             fieldnames=["Category", "Type", "Subtype", "Has Backpack",
-                        "Name", "Source", "Image Link"],
+                        "Name", "Source", "Is Warbond", "Image Link"],
         )
         writer.writeheader()
         writer.writerows(unique)

@@ -84,7 +84,8 @@ export class SlotMachine {
         const key = cfg.key;
         const item = picks[j];
         const reel = this.reelEls.get(key);
-        if (!reel || !item) return;
+        if (!reel) return;
+        if (!item) return this._renderEmpty(reel);
         this._setSpinning(reel, true);
         setTimeout(() => {
           this._render(reel, item);
@@ -175,6 +176,21 @@ export class SlotMachine {
     reel.text.textContent = item.Name || '';
   }
 
+  // Shown when the pool has no eligible items (e.g. every warbond disabled)
+  _renderEmpty(reel) {
+    this._setSpinning(reel, false);
+    reel.img.onerror = null;
+    const svg = `data:image/svg+xml;utf8,${encodeURIComponent(`
+      <svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'>
+        <rect width='100%' height='100%' fill='#0c1020'/>
+        <text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='#9aa0ae' font-family='sans-serif' font-size='16'>No items enabled</text>
+      </svg>
+    `)}`;
+    reel.img.src = svg;
+    reel.img.alt = 'No items enabled';
+    reel.text.textContent = '—';
+  }
+
   _setSpinning(reel, spinning) {
     if (!reel) return;
     if (spinning) reel.el.classList.add('spinning');
@@ -236,7 +252,8 @@ export class SlotMachine {
       cfgs.forEach((cfg, j) => {
         const reel = this.reelEls.get(cfg.key);
         const item = picks[j];
-        if (!reel || !item) return;
+        if (!reel) return;
+        if (!item) return this._renderEmpty(reel);
         this._render(reel, item);
       });
     }

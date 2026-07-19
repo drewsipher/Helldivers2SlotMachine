@@ -16,6 +16,16 @@
       </header>
 
       <main>
+        <details class="settings">
+          <summary>⚙ Warbond Settings</summary>
+          <p class="settings-hint">Untick the Warbonds you don't own and their weapons, stratagems, and boosters will stay out of the spins. Base game, ship module, and Superstore gear is always included. Your choices are saved in this browser.</p>
+          <div class="settings-actions">
+            <button type="button" class="chip" id="warbonds-all">Select all</button>
+            <button type="button" class="chip" id="warbonds-none">Select none</button>
+          </div>
+          <div class="warbond-list" id="warbond-list"></div>
+        </details>
+
         <section class="machine machine--loadout">
           <div class="machine-title">
             <h2>Loadout Machine</h2>
@@ -58,6 +68,7 @@
               <input type="checkbox" id="extra-toggle" />
               <span class="toggle-track"><span class="toggle-thumb"></span></span>
             </label>
+            <p class="toggle-hint">OFF: sensible spins — at most one backpack and one non&#8209;expendable support weapon. ON: fully random, anything goes. For Democracy.</p>
           </div>
           <div class="slot-frame">
             <div class="reels">

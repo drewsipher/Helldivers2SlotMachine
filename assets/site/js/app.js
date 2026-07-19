@@ -47,27 +47,46 @@ function safePlay(audio) {
   try { audio.currentTime = 0; audio.play(); } catch { /* ignore */ }
 }
 
+const EXCLUDED_WARBONDS_KEY = 'hd2slot-excluded-warbonds';
+
+function loadExcludedWarbonds(known) {
+  try {
+    const saved = JSON.parse(localStorage.getItem(EXCLUDED_WARBONDS_KEY) || '[]');
+    return new Set(saved.filter(w => known.includes(w)));
+  } catch {
+    return new Set();
+  }
+}
+
+function saveExcludedWarbonds(excluded) {
+  try { localStorage.setItem(EXCLUDED_WARBONDS_KEY, JSON.stringify([...excluded])); } catch {}
+}
+
 async function main() {
   const rows = await loadCsv(DATA_CSV);
   // Extra Democratic toggle (on = random, off = strict)
   const strictEl = document.getElementById('extra-toggle');
-  // Partition the data
-  const weapons = rows.filter(r => r.Category.toLowerCase() === 'weapon');
-  const boosters = rows.filter(r => r.Category.toLowerCase() === 'booster');
-  const strategems = rows.filter(r => r.Category.toLowerCase() === 'strategem');
 
-  const primaries = weapons.filter(w => (w.Type || '').toLowerCase() === 'primary');
-  const secondaries = weapons.filter(w => (w.Type || '').toLowerCase() === 'secondary');
-  const grenades = weapons.filter(w => (w.Type || '').toLowerCase() === 'grenade');
+  // Warbond settings: rows with "Is Warbond" true can be excluded by Source
+  const warbonds = [...new Set(
+    rows.filter(r => (r['Is Warbond'] || '').toLowerCase() === 'true').map(r => r.Source)
+  )].sort((a, b) => a.localeCompare(b));
+  const excluded = loadExcludedWarbonds(warbonds);
 
-  // Reel data maps to required fields
-  const reelData = {
-    primary: primaries,
-    secondary: secondaries,
-    grenade: grenades,
-    strat: strategems,
-    booster: boosters,
-  };
+  // Reel data is filtered in place so the machines always see current pools
+  const reelData = { primary: [], secondary: [], grenade: [], strat: [], booster: [] };
+
+  function applyWarbondFilter() {
+    const active = rows.filter(r =>
+      (r['Is Warbond'] || '').toLowerCase() !== 'true' || !excluded.has(r.Source));
+    const weapons = active.filter(r => r.Category.toLowerCase() === 'weapon');
+    reelData.primary = weapons.filter(w => (w.Type || '').toLowerCase() === 'primary');
+    reelData.secondary = weapons.filter(w => (w.Type || '').toLowerCase() === 'secondary');
+    reelData.grenade = weapons.filter(w => (w.Type || '').toLowerCase() === 'grenade');
+    reelData.strat = active.filter(r => r.Category.toLowerCase() === 'strategem');
+    reelData.booster = active.filter(r => r.Category.toLowerCase() === 'booster');
+  }
+  applyWarbondFilter();
 
   const loadoutMachine = new SlotMachine('.machine--loadout', [
     { key: 'primary', label: 'Primary' },
@@ -94,6 +113,41 @@ async function main() {
     loadoutMachine.seed({ strict });
     stratMachine.seed({ strict });
   });
+
+  // Warbond settings UI
+  const listEl = document.getElementById('warbond-list');
+  function refreshAfterFilterChange() {
+    saveExcludedWarbonds(excluded);
+    applyWarbondFilter();
+    const strict = !strictEl?.checked;
+    loadoutMachine.seed({ strict });
+    stratMachine.seed({ strict });
+  }
+  if (listEl) {
+    warbonds.forEach(w => {
+      const label = document.createElement('label');
+      label.className = 'warbond-item';
+      const cb = document.createElement('input');
+      cb.type = 'checkbox';
+      cb.checked = !excluded.has(w);
+      cb.addEventListener('change', () => {
+        if (cb.checked) excluded.delete(w); else excluded.add(w);
+        refreshAfterFilterChange();
+      });
+      const span = document.createElement('span');
+      span.textContent = w;
+      label.append(cb, span);
+      listEl.appendChild(label);
+    });
+    const setAll = (checked) => {
+      listEl.querySelectorAll('input').forEach(cb => cb.checked = checked);
+      excluded.clear();
+      if (!checked) warbonds.forEach(w => excluded.add(w));
+      refreshAfterFilterChange();
+    };
+    document.getElementById('warbonds-all')?.addEventListener('click', () => setAll(true));
+    document.getElementById('warbonds-none')?.addEventListener('click', () => setAll(false));
+  }
 
   // Invert logic: unchecked => strict=true
   document.getElementById('spin-loadout').addEventListener('click', () => loadoutMachine.spin({ strict: !strictEl?.checked }));
