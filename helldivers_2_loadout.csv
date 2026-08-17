@@ -67,7 +67,7 @@ Strategem,Sentry,Mortar Sentry,False,A/M-12 Mortar Sentry,Robotics Workshop,Fals
 Strategem,Sentry,EMS Mortar Sentry,False,A/M-23 EMS Mortar Sentry,Robotics Workshop,False,https://helldivers.wiki.gg/images/EMS_Mortar_Sentry_Stratagem_Icon_Background.svg
 Strategem,Sentry,Machine Gun Sentry,False,A/MG-43 Machine Gun Sentry,Robotics Workshop,False,https://helldivers.wiki.gg/images/Machine_Gun_Sentry_Stratagem_Icon_Background.svg
 Strategem,Sentry,Rocket Sentry,False,A/MLS-4X Rocket Sentry,Robotics Workshop,False,https://helldivers.wiki.gg/images/Rocket_Sentry_Stratagem_Icon_Background.svg
-Strategem,Support Weapon,Meltagun,False,40-K Meltagun,Castellan’s Creed,False,https://helldivers.wiki.gg/images/Support_Weapon_Stratagem_Fallback_Icon.svg
+Strategem,Support Weapon,Meltagun,False,40-K Meltagun,Castellan’s Creed,False,https://helldivers.wiki.gg/images/Meltagun_Stratagem_Icon_Background.svg
 Strategem,Support Weapon,Autocannon,True,AC-8 Autocannon,Patriotic Administration Center,False,https://helldivers.wiki.gg/images/Autocannon_Stratagem_Icon_Background.svg
 Strategem,Support Weapon,Anti-Materiel Rifle,False,APW-1 Anti-Materiel Rifle,Patriotic Administration Center,False,https://helldivers.wiki.gg/images/Anti-Materiel_Rifle_Stratagem_Icon_Background.svg
 Strategem,Support Weapon,Arc Thrower,False,ARC-3 Arc Thrower,Engineering Bay,False,https://helldivers.wiki.gg/images/Arc_Thrower_Stratagem_Icon_Background.svg
@@ -104,7 +104,7 @@ Strategem,Vehicle,Patriot Exosuit,False,EXO-45 Patriot Exosuit,Robotics Workshop
 Strategem,Vehicle,Emancipator Exosuit,False,EXO-49 Emancipator Exosuit,Robotics Workshop,False,https://helldivers.wiki.gg/images/Emancipator_Exosuit_Stratagem_Icon_Background.svg
 Strategem,Vehicle,Lumberer Exosuit,False,EXO-51 Lumberer Exosuit,Exo Experts,True,https://helldivers.wiki.gg/images/Lumberer_Exosuit_Stratagem_Icon_Background.svg
 Strategem,Vehicle,Breakthrough Exosuit,False,EXO-55 Breakthrough Exosuit,Exo Experts,True,https://helldivers.wiki.gg/images/Breakthrough_Exosuit_Stratagem_Icon_Background.svg
-Strategem,Vehicle,Fast Recon Vehicle,False,M-102 Fast Recon Vehicle,Hangar,False,https://helldivers.wiki.gg/images/Fast_Recon_Vehicle_Stratagem_Icon_Background.svg
+Strategem,Vehicle,Gunner FRV,False,M-102 Gunner FRV,Hangar,False,https://helldivers.wiki.gg/images/Fast_Recon_Vehicle_Stratagem_Icon_Background.svg
 Strategem,Vehicle,Incinerator FRV,False,M-104 Incinerator FRV,Hangar,False,https://helldivers.wiki.gg/images/Incinerator_FRV_Stratagem_Icon_Background.svg
 Strategem,Vehicle,Supply FRV,False,Supply FRV,Hangar,False,https://helldivers.wiki.gg/images/Supply_FRV_Stratagem_Icon_Background.svg
 Strategem,Vehicle,Bastion MK XVI,False,TD-220 Bastion MK XVI,Hangar,False,https://helldivers.wiki.gg/images/Bastion_MK_XVI_Stratagem_Icon_Background.svg
@@ -119,12 +119,12 @@ Weapon,Grenade,Special,False,G-23 Stun,Cutting Edge,True,https://helldivers.wiki
 Weapon,Grenade,Special,False,G-3 Smoke,Helldivers Mobilize!,True,https://helldivers.wiki.gg/images/G-3_Smoke_Throwable_Render.png
 Weapon,Grenade,Special,False,G-31 Arc,Control Group,True,https://helldivers.wiki.gg/images/G-31_ARC_Throwable_Render.png
 Weapon,Grenade,Special,False,G-4 Gas,Chemical Agents,True,https://helldivers.wiki.gg/images/G-4_Gas_Throwable_Render.png
-Weapon,Grenade,Special,False,G-40-K Meltamine,Castellan’s Creed,False,https://helldivers.wiki.gg/images/G-40-K_Meltamine_Throwable_Icon.png
 Weapon,Grenade,Special,False,G-48 Giga Grenade,Entrenched Division,True,https://helldivers.wiki.gg/images/G-48_Giga_Grenade_Throwable_Render.png
 Weapon,Grenade,Special,False,G-50 Seeker,Servants of Freedom,True,https://helldivers.wiki.gg/images/G-50_Seeker_Throwable_Render.png
 Weapon,Grenade,Standard,False,G-6 Frag,Helldivers Mobilize!,True,https://helldivers.wiki.gg/images/G-6_Frag_Throwable_Render.png
 Weapon,Grenade,Standard,False,G-7 Pineapple,Dust Devils,True,https://helldivers.wiki.gg/images/G-7_Pineapple_Throwable_Render.png
 Weapon,Grenade,Special,False,G-89 Smokescreen,Superstore,False,https://helldivers.wiki.gg/images/G-89_Smokescreen_Throwable_Render.png
+Weapon,Grenade,Special,False,G/40-K Melta Mine,Castellan’s Creed,False,https://helldivers.wiki.gg/images/G-40-K_Melta_Mine_Throwable_Render.png
 Weapon,Grenade,Special,False,G/SH-39 Shield,Siege Breakers,True,https://helldivers.wiki.gg/images/G-SH-39_Shield_Throwable_Render.png
 Weapon,Grenade,Special,False,K-2 Throwing Knife,Viper Commandos,True,https://helldivers.wiki.gg/images/K-2_Throwing_Knife_Throwable_Render.png
 Weapon,Grenade,Standard,False,TED-63 Dynamite,Borderline Justice,True,https://helldivers.wiki.gg/images/TED-63_Dynamite_Throwable_Render.png
@@ -159,11 +159,11 @@ Weapon,Primary,Marksman Rifles,False,R-2 Amendment,Masters of Ceremony,True,http
 Weapon,Primary,Marksman Rifles,False,R-2124 Constitution,Liberty Day,False,https://helldivers.wiki.gg/images/R-2124_Constitution_Primary_Render.png
 Weapon,Primary,Explosives,False,R-36 Eruptor,Democratic Detonation,True,https://helldivers.wiki.gg/images/R-36_Eruptor_Primary_Render.png
 Weapon,Primary,Marksman Rifles,False,R-4 Hyena,Celestial Fence,False,https://helldivers.wiki.gg/images/R-4_Hyena_Primary_Render.png
-Weapon,Primary,Marksman Rifles,False,R-40-K Hot-Shot Marksman Rifle,Castellan’s Creed,False,https://helldivers.wiki.gg/images/R-40-K_Hot-Shot_Marksman_Rifle_Primary_Icon.png
 Weapon,Primary,Marksman Rifles,False,R-6 Deadeye,Borderline Justice,True,https://helldivers.wiki.gg/images/R-6_Deadeye_Primary_Render.png
 Weapon,Primary,Marksman Rifles,False,R-63 Diligence,Helldivers Mobilize!,True,https://helldivers.wiki.gg/images/R-63_Diligence_Primary_Render.png
 Weapon,Primary,Marksman Rifles,False,R-63CS Diligence Counter Sniper,Helldivers Mobilize!,True,https://helldivers.wiki.gg/images/R-63CS_Diligence_Counter_Sniper_Primary_Render.png
 Weapon,Primary,Marksman Rifles,False,R-72 Censor,Redacted Regiment,True,https://helldivers.wiki.gg/images/R-72_Censor_Primary_Render.png
+Weapon,Primary,Energy-Based,False,R/40-K Hot-Shot Marksman Rifle,Castellan’s Creed,False,https://helldivers.wiki.gg/images/R-40-K_Hot-Shot_Primary_Render.png
 Weapon,Primary,Shotguns,False,SG-20 Halt,Truth Enforcers,True,https://helldivers.wiki.gg/images/SG-20_Halt_Primary_Render.png
 Weapon,Primary,Shotguns,False,SG-225 Breaker,Helldivers Mobilize!,True,https://helldivers.wiki.gg/images/SG-225_Breaker_Primary_Render.png
 Weapon,Primary,Shotguns,False,SG-225IE Breaker Incendiary,Steeled Veterans,True,https://helldivers.wiki.gg/images/SG-225IE_Breaker_Incendiary_Primary_Render.png
@@ -199,9 +199,9 @@ Weapon,Secondary,Pistols,False,P-2 Peacemaker,Starter Equipment,False,https://he
 Weapon,Secondary,Special,False,P-33 Missile Pistol,Exo Experts,True,https://helldivers.wiki.gg/images/P-33_Missile_Pistol_Secondary_Render.png
 Weapon,Secondary,Special,False,P-35 Re-Educator,Redacted Regiment,True,https://helldivers.wiki.gg/images/P-35_Re-Educator_Secondary_Render.png
 Weapon,Secondary,Pistols,False,P-4 Senator,Steeled Veterans,True,https://helldivers.wiki.gg/images/P-4_Senator_Secondary_Render.png
-Weapon,Secondary,Pistol,False,P-40-K Bolt Pistol,Castellan’s Creed,False,https://helldivers.wiki.gg/images/P-40-K_Bolt_Pistol_Secondary_Icon.png
 Weapon,Secondary,Pistols,False,P-69 Veto,Entrenched Division,True,https://helldivers.wiki.gg/images/P-69_Veto_Secondary_Icon.png
 Weapon,Secondary,Special,False,P-72 Crisper,Freedom's Flame,True,https://helldivers.wiki.gg/images/P-72_Crisper_Secondary_Render.png
 Weapon,Secondary,Pistols,False,P-92 Warrant,Superstore,False,https://helldivers.wiki.gg/images/P-92_Warrant_Secondary_Render.png
+Weapon,Secondary,Special,False,P/40-K Bolt Pistol,Castellan’s Creed,False,https://helldivers.wiki.gg/images/P-40-K_Bolt_Pistol_Secondary_Render.png
 Weapon,Secondary,Special,False,PLAS-15 Loyalist,Truth Enforcers,True,https://helldivers.wiki.gg/images/PLAS-15_Loyalist_Secondary_Render.png
 Weapon,Secondary,Special,False,SG-22 Bushwhacker,Viper Commandos,True,https://helldivers.wiki.gg/images/SG-22_Bushwhacker_Secondary_Render.png
