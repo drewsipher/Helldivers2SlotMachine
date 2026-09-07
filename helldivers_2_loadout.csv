@@ -34,6 +34,7 @@ Strategem,Eagle,Eagle 110mm Rocket Pods,False,Eagle 110mm Rocket Pods,Hangar,Fal
 Strategem,Eagle,Eagle 500kg Bomb,False,Eagle 500kg Bomb,Hangar,False,https://helldivers.wiki.gg/images/Eagle_500kg_Bomb_Stratagem_Icon_Background.svg
 Strategem,Eagle,Eagle Airstrike,False,Eagle Airstrike,Hangar,False,https://helldivers.wiki.gg/images/Eagle_Airstrike_Stratagem_Icon_Background.svg
 Strategem,Eagle,Eagle Cluster Bomb,False,Eagle Cluster Bomb,Hangar,False,https://helldivers.wiki.gg/images/Eagle_Cluster_Bomb_Stratagem_Icon_Background.svg
+Strategem,Eagle,Eagle Gas Airstrike,False,Eagle Gas Airstrike,Counterdissident Hammer,False,https://helldivers.wiki.gg/images/Eagle_Gas_Airstrike_Stratagem_Icon_Background.svg
 Strategem,Eagle,Eagle Napalm Airstrike,False,Eagle Napalm Airstrike,Hangar,False,https://helldivers.wiki.gg/images/Eagle_Napalm_Airstrike_Stratagem_Icon_Background.svg
 Strategem,Eagle,Eagle Smoke Strike,False,Eagle Smoke Strike,Hangar,False,https://helldivers.wiki.gg/images/Eagle_Smoke_Strike_Stratagem_Icon_Background.svg
 Strategem,Eagle,Eagle Strafing Run,False,Eagle Strafing Run,Hangar,False,https://helldivers.wiki.gg/images/Eagle_Strafing_Run_Stratagem_Icon_Background.svg
@@ -105,8 +106,8 @@ Strategem,Vehicle,Emancipator Exosuit,False,EXO-49 Emancipator Exosuit,Robotics 
 Strategem,Vehicle,Lumberer Exosuit,False,EXO-51 Lumberer Exosuit,Exo Experts,True,https://helldivers.wiki.gg/images/Lumberer_Exosuit_Stratagem_Icon_Background.svg
 Strategem,Vehicle,Breakthrough Exosuit,False,EXO-55 Breakthrough Exosuit,Exo Experts,True,https://helldivers.wiki.gg/images/Breakthrough_Exosuit_Stratagem_Icon_Background.svg
 Strategem,Vehicle,Gunner FRV,False,M-102 Gunner FRV,Hangar,False,https://helldivers.wiki.gg/images/Fast_Recon_Vehicle_Stratagem_Icon_Background.svg
-Strategem,Vehicle,Supply FRV,False,M-103 Supply FRV,Hangar,False,https://helldivers.wiki.gg/images/Supply_FRV_Stratagem_Icon_Background.svg
-Strategem,Vehicle,Incinerator FRV,False,M-104 Incinerator FRV,Hangar,False,https://helldivers.wiki.gg/images/Incinerator_FRV_Stratagem_Icon_Background.svg
+Strategem,Vehicle,Supply FRV,False,M-103 Supply FRV,Census Thunder,False,https://helldivers.wiki.gg/images/Supply_FRV_Stratagem_Icon_Background.svg
+Strategem,Vehicle,Incinerator FRV,False,M-104 Incinerator FRV,N/A,False,https://helldivers.wiki.gg/images/Incinerator_FRV_Stratagem_Icon_Background.svg
 Strategem,Vehicle,Bastion MK XVI,False,TD-220 Bastion MK XVI,Hangar,False,https://helldivers.wiki.gg/images/Bastion_MK_XVI_Stratagem_Icon_Background.svg
 Weapon,Grenade,Standard,False,G-10 Incendiary,Steeled Veterans,True,https://helldivers.wiki.gg/images/G-10_Incendiary_Throwable_Render.png
 Weapon,Grenade,Special,False,G-109 Urchin,Force of Law,True,https://helldivers.wiki.gg/images/G-109_Urchin_Throwable_Render.png
