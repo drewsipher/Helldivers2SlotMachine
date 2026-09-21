@@ -8,6 +8,7 @@ Booster,Booster,,False,Firebomb Hellpods,Freedom's Flame,True,https://helldivers
 Booster,Booster,,False,Flexible Reinforcement Budget,Steeled Veterans,True,https://helldivers.wiki.gg/images/Flexible_Reinforcement_Budget_Booster_Icon.svg,assets/images/resized/booster/booster/flexible-reinforcement-budget.svg
 Booster,Booster,,False,Hellpod Space Optimization,Helldivers Mobilize!,True,https://helldivers.wiki.gg/images/Hellpod_Space_Optimization_Booster_Icon.svg,assets/images/resized/booster/booster/hellpod-space-optimization.svg
 Booster,Booster,,False,Increased Reinforcement Budget,Helldivers Mobilize!,True,https://helldivers.wiki.gg/images/Increased_Reinforcement_Budget_Booster_Icon.svg,assets/images/resized/booster/booster/increased-reinforcement-budget.svg
+Booster,Booster,,False,Integrated Extinguishers,,False,https://helldivers.wiki.gg/images/Integrated_Extinguishers_Booster_Icon.svg,assets/images/resized/booster/booster/integrated-extinguishers.svg
 Booster,Booster,,False,Localization Confusion,Cutting Edge,True,https://helldivers.wiki.gg/images/Localization_Confusion_Booster_Icon.svg,assets/images/resized/booster/booster/localization-confusion.svg
 Booster,Booster,,False,Motivational Shocks,Polar Patriots,True,https://helldivers.wiki.gg/images/Motivational_Shocks_Booster_Icon.svg,assets/images/resized/booster/booster/motivational-shocks.svg
 Booster,Booster,,False,Muscle Enhancement,Helldivers Mobilize!,True,https://helldivers.wiki.gg/images/Muscle_Enhancement_Booster_Icon.svg,assets/images/resized/booster/booster/muscle-enhancement.svg
@@ -15,6 +16,7 @@ Booster,Booster,,False,Sample Extricator,Borderline Justice,True,https://helldiv
 Booster,Booster,,False,Sample Scanner,Masters of Ceremony,True,https://helldivers.wiki.gg/images/Sample_Scanner_Booster_Icon.svg,assets/images/resized/booster/booster/sample-scanner.svg
 Booster,Booster,,False,Stamina Enhancement,Helldivers Mobilize!,True,https://helldivers.wiki.gg/images/Stamina_Enhancement_Booster_Icon.svg,assets/images/resized/booster/booster/stamina-enhancement.svg
 Booster,Booster,,False,Stun Pods,Force of Law,True,https://helldivers.wiki.gg/images/Stun_Pods_Booster_Icon.svg,assets/images/resized/booster/booster/stun-pods.svg
+Booster,Booster,,False,Surplus EAT Allocation,,False,https://helldivers.wiki.gg/images/Medal.svg,assets/images/resized/booster/booster/surplus-eat-allocation.svg
 Booster,Booster,,False,UAV Recon Booster,Helldivers Mobilize!,True,https://helldivers.wiki.gg/images/UAV_Recon_Booster_Booster_Icon.svg,assets/images/resized/booster/booster/uav-recon-booster.svg
 Booster,Booster,,False,Vitality Enhancement,Helldivers Mobilize!,True,https://helldivers.wiki.gg/images/Vitality_Enhancement_Booster_Icon.svg,assets/images/resized/booster/booster/vitality-enhancement.svg
 Strategem,Backpack,Guard Dog,True,AX/AR-23 Guard Dog,Engineering Bay,False,https://helldivers.wiki.gg/images/Guard_Dog_Stratagem_Icon_Background.svg,assets/images/resized/strategem/backpack/ax-ar-23-guard-dog.svg
@@ -108,6 +110,7 @@ Strategem,Vehicle,Breakthrough Exosuit,False,EXO-55 Breakthrough Exosuit,Exo Exp
 Strategem,Vehicle,Gunner FRV,False,M-102 Gunner FRV,Hangar,False,https://helldivers.wiki.gg/images/Fast_Recon_Vehicle_Stratagem_Icon_Background.svg,assets/images/resized/strategem/vehicle/m-102-gunner-frv.svg
 Strategem,Vehicle,Supply FRV,False,M-103 Supply FRV,Census Thunder,False,https://helldivers.wiki.gg/images/Supply_FRV_Stratagem_Icon_Background.svg,assets/images/resized/strategem/vehicle/m-103-supply-frv.svg
 Strategem,Vehicle,Incinerator FRV,False,M-104 Incinerator FRV,N/A,False,https://helldivers.wiki.gg/images/Incinerator_FRV_Stratagem_Icon_Background.svg,assets/images/resized/strategem/vehicle/m-104-incinerator-frv.svg
+Strategem,Vehicle,Maelstrom,False,TD-110 Maelstrom,,False,https://helldivers.wiki.gg/images/Maelstrom_Stratagem_Icon_Background.svg,assets/images/resized/strategem/vehicle/td-110-maelstrom.svg
 Strategem,Vehicle,Bastion MK XVI,False,TD-220 Bastion MK XVI,Hangar,False,https://helldivers.wiki.gg/images/Bastion_MK_XVI_Stratagem_Icon_Background.svg,assets/images/resized/strategem/vehicle/td-220-bastion-mk-xvi.svg
 Weapon,Grenade,Standard,False,G-10 Incendiary,Steeled Veterans,True,https://helldivers.wiki.gg/images/G-10_Incendiary_Throwable_Render.png,assets/images/resized/weapon/grenade/g-10-incendiary.png
 Weapon,Grenade,Special,False,G-109 Urchin,Force of Law,True,https://helldivers.wiki.gg/images/G-109_Urchin_Throwable_Render.png,assets/images/resized/weapon/grenade/g-109-urchin.png
@@ -123,13 +126,16 @@ Weapon,Grenade,Special,False,G-4 Gas,Chemical Agents,True,https://helldivers.wik
 Weapon,Grenade,Special,False,G-48 Giga Grenade,Entrenched Division,True,https://helldivers.wiki.gg/images/G-48_Giga_Grenade_Throwable_Render.png,assets/images/resized/weapon/grenade/g-48-giga-grenade.png
 Weapon,Grenade,Special,False,G-50 Seeker,Servants of Freedom,True,https://helldivers.wiki.gg/images/G-50_Seeker_Throwable_Render.png,assets/images/resized/weapon/grenade/g-50-seeker.png
 Weapon,Grenade,Standard,False,G-6 Frag,Helldivers Mobilize!,True,https://helldivers.wiki.gg/images/G-6_Frag_Throwable_Render.png,assets/images/resized/weapon/grenade/g-6-frag.png
+Weapon,Grenade,Special,False,G-60 Anti-Tank Seeker,Ironclad Democracy,False,https://helldivers.wiki.gg/images/G-60_Anti-Tank_Seeker_Throwable_Render.png,assets/images/resized/weapon/grenade/g-60-anti-tank-seeker.png
 Weapon,Grenade,Standard,False,G-7 Pineapple,Dust Devils,True,https://helldivers.wiki.gg/images/G-7_Pineapple_Throwable_Render.png,assets/images/resized/weapon/grenade/g-7-pineapple.png
+Weapon,Grenade,Special,False,G-8 Immolation,Ironclad Democracy,False,https://helldivers.wiki.gg/images/G-8_Immolation_Throwable_Render.png,assets/images/resized/weapon/grenade/g-8-immolation.png
 Weapon,Grenade,Special,False,G-89 Smokescreen,Superstore,False,https://helldivers.wiki.gg/images/G-89_Smokescreen_Throwable_Render.png,assets/images/resized/weapon/grenade/g-89-smokescreen.png
 Weapon,Grenade,Special,False,G/40-K Melta Mine,Castellan’s Creed,False,https://helldivers.wiki.gg/images/G-40-K_Melta_Mine_Throwable_Render.png,assets/images/resized/weapon/grenade/g-40-k-melta-mine.png
 Weapon,Grenade,Special,False,G/SH-39 Shield,Siege Breakers,True,https://helldivers.wiki.gg/images/G-SH-39_Shield_Throwable_Render.png,assets/images/resized/weapon/grenade/g-sh-39-shield.png
 Weapon,Grenade,Special,False,K-2 Throwing Knife,Viper Commandos,True,https://helldivers.wiki.gg/images/K-2_Throwing_Knife_Throwable_Render.png,assets/images/resized/weapon/grenade/k-2-throwing-knife.png
 Weapon,Grenade,Standard,False,TED-63 Dynamite,Borderline Justice,True,https://helldivers.wiki.gg/images/TED-63_Dynamite_Throwable_Render.png,assets/images/resized/weapon/grenade/ted-63-dynamite.png
 Weapon,Grenade,Special,False,TM-1 Lure Mine,Redacted Regiment,True,https://helldivers.wiki.gg/images/TM-1_Lure_Mine_Throwable_Render.png,assets/images/resized/weapon/grenade/tm-1-lure-mine.png
+Weapon,Primary,Assault Rifles,False,AR-11 Arbitrator,Ironclad Democracy,False,https://helldivers.wiki.gg/images/AR-11_Arbitrator_Primary_Render.png,assets/images/resized/weapon/primary/ar-11-arbitrator.png
 Weapon,Primary,Assault Rifles,False,AR-2 Coyote,Dust Devils,True,https://helldivers.wiki.gg/images/AR-2_Coyote_Primary_Render.png,assets/images/resized/weapon/primary/ar-2-coyote.png
 Weapon,Primary,Assault Rifles,False,AR-23 Liberator,Starter Equipment,False,https://helldivers.wiki.gg/images/AR-23_Liberator_Primary_Render.png,assets/images/resized/weapon/primary/ar-23-liberator.png
 Weapon,Primary,Assault Rifles,False,AR-23A Liberator Carbine,Viper Commandos,True,https://helldivers.wiki.gg/images/AR-23A_Liberator_Carbine_Primary_Render.png,assets/images/resized/weapon/primary/ar-23a-liberator-carbine.png
@@ -144,6 +150,7 @@ Weapon,Primary,Assault Rifles,False,BR-14 Adjudicator,Democratic Detonation,True
 Weapon,Primary,Explosives,False,CB-9 Exploding Crossbow,Democratic Detonation,True,https://helldivers.wiki.gg/images/CB-9_Exploding_Crossbow_Primary_Render.png,assets/images/resized/weapon/primary/cb-9-exploding-crossbow.png
 Weapon,Primary,Shotguns,False,DBS-2 Double Freedom,Superstore,False,https://helldivers.wiki.gg/images/DBS-2_Shotgun_Primary_Render.png,assets/images/resized/weapon/primary/dbs-2-double-freedom.png
 Weapon,Primary,Special,False,FLAM-66 Torcher,Freedom's Flame,True,https://helldivers.wiki.gg/images/FLAM-66_Torcher_Primary_Render.png,assets/images/resized/weapon/primary/flam-66-torcher.png
+Weapon,Primary,Explosives,False,GL-15 Evictor,Ironclad Democracy,False,https://helldivers.wiki.gg/images/GL-15_Evictor_Primary_Render.png,assets/images/resized/weapon/primary/gl-15-evictor.png
 Weapon,Primary,Special,False,JAR-5 Dominator,Steeled Veterans,True,https://helldivers.wiki.gg/images/JAR-5_Dominator_Primary_Render.png,assets/images/resized/weapon/primary/jar-5-dominator.png
 Weapon,Primary,Energy-Based,False,LAS-13 Trident,Siege Breakers,True,https://helldivers.wiki.gg/images/LAS-13_Trident_Primary_Render.png,assets/images/resized/weapon/primary/las-13-trident.png
 Weapon,Primary,Energy-Based,False,LAS-16 Sickle,Cutting Edge,True,https://helldivers.wiki.gg/images/LAS-16_Sickle_Primary_Render.png,assets/images/resized/weapon/primary/las-16-sickle.png
@@ -198,6 +205,7 @@ Weapon,Secondary,Pistols,False,P-113 Verdict,Polar Patriots,True,https://helldiv
 Weapon,Secondary,Pistols,False,P-19 Redeemer,Helldivers Mobilize!,True,https://helldivers.wiki.gg/images/P-19_Redeemer_Secondary_Render.png,assets/images/resized/weapon/secondary/p-19-redeemer.png
 Weapon,Secondary,Pistols,False,P-2 Peacemaker,Starter Equipment,False,https://helldivers.wiki.gg/images/P-2_Peacemaker_Secondary_Render.png,assets/images/resized/weapon/secondary/p-2-peacemaker.png
 Weapon,Secondary,Special,False,P-33 Missile Pistol,Exo Experts,True,https://helldivers.wiki.gg/images/P-33_Missile_Pistol_Secondary_Render.png,assets/images/resized/weapon/secondary/p-33-missile-pistol.png
+Weapon,Secondary,Special,False,P-34 Breacher,Ironclad Democracy,False,https://helldivers.wiki.gg/images/P-34_Breacher_Secondary_Render.png,assets/images/resized/weapon/secondary/p-34-breacher.png
 Weapon,Secondary,Special,False,P-35 Re-Educator,Redacted Regiment,True,https://helldivers.wiki.gg/images/P-35_Re-Educator_Secondary_Render.png,assets/images/resized/weapon/secondary/p-35-re-educator.png
 Weapon,Secondary,Pistols,False,P-4 Senator,Steeled Veterans,True,https://helldivers.wiki.gg/images/P-4_Senator_Secondary_Render.png,assets/images/resized/weapon/secondary/p-4-senator.png
 Weapon,Secondary,Pistols,False,P-69 Veto,Entrenched Division,True,https://helldivers.wiki.gg/images/P-69_Veto_Secondary_Icon.png,assets/images/resized/weapon/secondary/p-69-veto.png
